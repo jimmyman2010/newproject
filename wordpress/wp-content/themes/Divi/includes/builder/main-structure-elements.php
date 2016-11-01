@@ -4,6 +4,7 @@ class ET_Builder_Section extends ET_Builder_Structure_Element {
 	function init() {
 		$this->name = esc_html__( 'Section', 'et_builder' );
 		$this->slug = 'et_pb_section';
+		$this->fb_support = true;
 
 		$this->whitelisted_fields = array(
 			'background_image',
@@ -553,6 +554,13 @@ class ET_Builder_Section extends ET_Builder_Structure_Element {
 			),
 		);
 
+		if ( et_fb_is_enabled() || et_fb_is_retrieving_builder_data() ) {
+			$fields["custom_padding_last_edited"] = array(
+				'type'     => 'skip',
+				'tab_slug' => 'advanced',
+			);
+		}
+
 		return $fields;
 	}
 
@@ -817,7 +825,7 @@ class ET_Builder_Section extends ET_Builder_Structure_Element {
 			foreach( $padding_settings as $padding_side => $value ) {
 				if ( '' !== $value ) {
 					$element_style = array(
-						'selector'    => '%%order_class%%',
+						'selector'    => '%%order_class%%.et_pb_section',
 						'declaration' => sprintf(
 							'padding-%1$s: %2$s;',
 							esc_html( $padding_side ),
@@ -851,7 +859,7 @@ class ET_Builder_Section extends ET_Builder_Structure_Element {
 			}
 
 			if ( ! empty( $padding_mobile_values_processed ) ) {
-				et_pb_generate_responsive_css( $padding_mobile_values_processed, '%%order_class%%', '', $function_name );
+				et_pb_generate_responsive_css( $padding_mobile_values_processed, '%%order_class%%.et_pb_section', '', $function_name );
 			}
 		}
 
@@ -903,12 +911,17 @@ class ET_Builder_Row extends ET_Builder_Structure_Element {
 	function init() {
 		$this->name = esc_html__( 'Row', 'et_builder' );
 		$this->slug = 'et_pb_row';
+		$this->fb_support = true;
 
 		$this->advanced_options = array(
 			'custom_margin_padding' => array(
 				'use_padding'       => false,
 				'custom_margin'     => array(
 					'priority' => 1,
+				),
+				'css' => array(
+					'main' => '%%order_class%%.et_pb_row',
+					'important' => 'all',
 				),
 			),
 		);
@@ -1081,6 +1094,7 @@ class ET_Builder_Row extends ET_Builder_Structure_Element {
 				'option_category' => 'layout',
 				'depends_show_if' => 'on',
 				'validate_unit'   => true,
+				'fixed_unit'      => 'px',
 				'range_settings'  => array(
 					'min'  => 500,
 					'max'  => 2600,
@@ -1094,6 +1108,7 @@ class ET_Builder_Row extends ET_Builder_Structure_Element {
 				'option_category' => 'layout',
 				'depends_show_if' => 'off',
 				'validate_unit'   => true,
+				'fixed_unit'      => '%',
 				'range_settings'  => array(
 					'min'  => 0,
 					'max'  => 100,
@@ -1508,6 +1523,13 @@ class ET_Builder_Row extends ET_Builder_Structure_Element {
 			),
 		);
 
+		if ( et_fb_is_enabled() || et_fb_is_retrieving_builder_data() ) {
+			$fields["custom_padding_last_edited"] = array(
+				'type'     => 'skip',
+				'tab_slug' => 'advanced',
+			);
+		}
+
 		return $fields;
 	}
 
@@ -1747,7 +1769,7 @@ class ET_Builder_Row extends ET_Builder_Structure_Element {
 			foreach( $padding_settings as $padding_side => $value ) {
 				if ( '' !== $value ) {
 					$element_style = array(
-						'selector'    => '%%order_class%%',
+						'selector'    => '%%order_class%%.et_pb_row',
 						'declaration' => sprintf(
 							'padding-%1$s: %2$s;',
 							esc_html( $padding_side ),
@@ -1781,7 +1803,7 @@ class ET_Builder_Row extends ET_Builder_Structure_Element {
 			}
 
 			if ( ! empty( $padding_mobile_values_processed ) ) {
-				et_pb_generate_responsive_css( $padding_mobile_values_processed, '%%order_class%%', '', $function_name, ' !important; ' );
+				et_pb_generate_responsive_css( $padding_mobile_values_processed, '%%order_class%%.et_pb_row', '', $function_name, ' !important; ' );
 			}
 		}
 
@@ -1877,11 +1899,13 @@ class ET_Builder_Row_Inner extends ET_Builder_Structure_Element {
 	function init() {
 		$this->name = esc_html__( 'Row', 'et_builder' );
 		$this->slug = 'et_pb_row_inner';
+		$this->fb_support = true;
 
 		$this->advanced_options = array(
 			'custom_margin_padding' => array(
 				'use_padding'       => false,
 				'css'               => array(
+					'main' => '%%order_class%%.et_pb_row_inner',
 					'important' => 'all',
 				),
 				'custom_margin'     => array(
@@ -2233,6 +2257,13 @@ class ET_Builder_Row_Inner extends ET_Builder_Structure_Element {
 			),
 		);
 
+		if ( et_fb_is_enabled() || et_fb_is_retrieving_builder_data() ) {
+			$fields["custom_padding_last_edited"] = array(
+				'type'     => 'skip',
+				'tab_slug' => 'advanced',
+			);
+		}
+
 		return $fields;
 	}
 
@@ -2414,7 +2445,7 @@ class ET_Builder_Row_Inner extends ET_Builder_Structure_Element {
 			}
 
 			if ( ! empty( $padding_mobile_values_processed ) ) {
-				et_pb_generate_responsive_css( $padding_mobile_values_processed, '.et_pb_column %%order_class%%', '', $function_name );
+				et_pb_generate_responsive_css( $padding_mobile_values_processed, '.et_pb_column %%order_class%%', '', $function_name, ' !important; ' );
 			}
 		}
 
@@ -2460,6 +2491,7 @@ class ET_Builder_Column extends ET_Builder_Structure_Element {
 		$this->name                       = esc_html__( 'Column', 'et_builder' );
 		$this->slug                       = 'et_pb_column';
 		$this->additional_shortcode_slugs = array( 'et_pb_column_inner' );
+		$this->fb_support = true;
 
 		$this->whitelisted_fields = array(
 			'type',
@@ -2609,6 +2641,10 @@ class ET_Builder_Column extends ET_Builder_Structure_Element {
 		}
 
 		if ( 'et_pb_column_inner' === $function_name ) {
+			if ( '1_1' === $type ) {
+				$type = '4_4';
+			}
+
 			$et_specialty_column_type = '' !== $saved_specialty_column_type ? $saved_specialty_column_type : $et_specialty_column_type;
 
 			switch ( $et_specialty_column_type ) {

