@@ -1,7 +1,7 @@
 /*
 Theme Name:  Norstone
 Theme URI:   http://localhost/Theme_Testing/norstone
-Version:     0.1
+Version:     1.1
 Description: A child theme of Divi. This is a custom child theme created for our site Norstone Global.
 Author:      Martin
 Author URI:  http://www.norstone.global
@@ -52,9 +52,7 @@ body p .arrow_carrot-right:before{
     position: absolute;
     top: 1px;
 }
-body p:empty{
-    display: none;
-}
+
 
 /* #main-footer { background-color:#c5c5c5;} */
 
@@ -120,10 +118,6 @@ body .homeslidermiddle .et_pb_slider .et_pb_slide, body .homeslidermiddle .et_pb
 
 body .fitbackground .et_pb_slider .et_pb_slide, body .fitbackground .et_pb_section { background-size:contain ; box-shadow: none; background-position:bottom;}
 */
-
-.et_pb_slide_description{
-    padding: 0;
-}
 
 .et_pb_slider .et_pb_slide{
     /*margin-top: 20px;*/
@@ -529,7 +523,7 @@ body .hmcorner1 h3 { margin-top:0px;}
 	/*-------------------[Sliders]------------------*/
 
 	/*-------------------[Menu]------------------*/
-
+/*
 	.btextclasswback { background-color:rgba(255, 255, 255, 0.8); padding:15px;}
 
 	.mt-navigators li a {
@@ -548,7 +542,7 @@ body .hmcorner1 h3 { margin-top:0px;}
 
 
 	body .fitbackground { background-size: cover !important; box-shadow: none !important;}
-
+*/
 
 }
 
@@ -680,7 +674,7 @@ body .hmcorner1 h3 { margin-top:0px;}
 #top-menu ul.sub-menu{
     width: 290px;
     border-color: #b40000;
-    left: -34px;
+    left: -38px;
     top: 30px;
 }
 #top-menu ul.sub-menu li a{
@@ -696,11 +690,6 @@ body .hmcorner1 h3 { margin-top:0px;}
     margin: 10px 0;
 }
 
-
-.et_pb_slider .et_pb_container{
-    /*width: 100%;*/
-    /*min-height: 150px !important;*/
-}
 
 #et_top_search{
     position: static;
@@ -836,6 +825,10 @@ body .entry-content .select-group li{
     top: 100%;
     z-index: 5000;
     background: white;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .product-menu-container:after{
@@ -902,7 +895,7 @@ body .entry-content .select-group li{
 .product-menu-container .basalt-il-tiles a:before{
     background-position: center -34px;
 }
-.product-menu-container .basalt-3d-tiles a:before{
+.product-menu-container .basalt-3d-panels a:before{
     background-position: center -68px;
 }
 .product-menu-container .monarostone a:before{
@@ -930,7 +923,55 @@ body .entry-content .select-group li{
     padding-right: 0;
 }
 
+
+.et_pb_slider .et_pb_container .et_pb_slide_description{
+    width: 100%;
+    min-height: 152px;
+}
+
+.et_fixed_nav.et_show_nav.et_secondary_nav_enabled #page-container, .et_fixed_nav.et_show_nav #page-container{
+    padding-top: 121px;
+}
+body.et_fixed_nav.et_secondary_nav_two_panels #main-header{
+    top: 0;
+}
+
+#top-menu ul.sub-menu .sub-menu{
+    position: static;
+    border: none;
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+    padding: 0 0 0 20px;
+    width: auto;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+#top-menu ul.sub-menu .sub-menu li{
+    padding: 0;
+    border: none;
+}
+#top-menu ul.sub-menu .sub-menu a{
+    border: none;
+}
+
 @media screen and (min-width: 981px) {
+
+    .et_pb_slider .et_pb_container .et_pb_slide_description{
+        min-height: 450px;
+    }
+    .homeslidermiddle .et_pb_slider .et_pb_container .et_pb_slide_description{
+        min-height: 315px;
+    }
+
+    .et_fixed_nav.et_show_nav.et_secondary_nav_enabled #page-container{
+        padding-top: 194px;
+    }
+    body.et_fixed_nav.et_secondary_nav_enabled #main-header{
+        top: 33px;
+    }
+
     .et_fixed_nav.et_boxed_layout #page-container #top-header,
     .et_fixed_nav.et_boxed_layout #page-container #main-header,
     .et_boxed_layout #page-container{
@@ -960,10 +1001,6 @@ body .entry-content .select-group li{
         max-width: 320px !important;
     }
 
-    .et_pb_slider .et_pb_container{
-        /*min-height: 450px !important;*/
-    }
-
     body .squashed {
         width: 80%;
     }
@@ -989,6 +1026,9 @@ body .entry-content .select-group li{
     .product-menu-container{
         display: block;
         position: static;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
 
     .product-menu-container .menu-item{
