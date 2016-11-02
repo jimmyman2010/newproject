@@ -60,6 +60,10 @@ wp_nav_menu( array(
 			$('#top-menu-nav .menu-item-has-children').on('mouseover', function(){
 				$('#et_top_search .et-search-form').slideUp();
 			});
+
+			$('.product-menu-toggle').on('click', function(){
+				$(this).toggleClass('open');
+			});
 		});
 	</script>
 

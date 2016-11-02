@@ -180,15 +180,17 @@
 					<?php do_action( 'et_header_top' ); ?>
 				</div> <!-- #et-top-navigation -->
 			</div> <!-- .container -->
-			<div class="container">
-				<div class="product-menu-toggle">Products</div>
-				<?php
-					wp_nav_menu( array(
-						'theme_location' => 'product-menu',
-						'menu_id' => 'product-menu',
-						'container_class' => 'product-menu-container'
-					));
-				?>
+			<div class="product-menu-wrapper">
+				<a href="javascript:void(0);" class="product-menu-toggle">Products</a>
+				<div class="container">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'product-menu',
+							'menu_id' => 'product-menu',
+							'container_class' => 'product-menu-container'
+						));
+					?>
+				</div>
 			</div>
 		</header> <!-- #main-header -->
 
