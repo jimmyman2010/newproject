@@ -54,4 +54,7 @@ function Divichild_pb_update_predefined_layouts() {
 
 
 
-?>
+function register_product_menu() {
+	register_nav_menu('product-menu',__( 'Product Menu' ));
+}
+add_action( 'init', 'register_product_menu' );

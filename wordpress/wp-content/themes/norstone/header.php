@@ -1,19 +1,8 @@
 <?php if ( ! isset( $_SESSION ) ) session_start(); ?>
 <!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
-<!--<![endif]-->
 <head>
-        <meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<title><?php elegant_titles(); ?></title>
 	<?php elegant_description(); ?>
 	<?php elegant_keywords(); ?>
@@ -191,6 +180,16 @@
 					<?php do_action( 'et_header_top' ); ?>
 				</div> <!-- #et-top-navigation -->
 			</div> <!-- .container -->
+			<div class="container">
+				<div class="product-menu-toggle">Products</div>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'product-menu',
+						'menu_id' => 'product-menu',
+						'container_class' => 'product-menu-container'
+					));
+				?>
+			</div>
 		</header> <!-- #main-header -->
 
 		<div id="et-main-area">
