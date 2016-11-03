@@ -164,7 +164,7 @@
 
 					<?php if ( false !== et_get_option( 'show_search_icon', true ) ) : ?>
 					<div id="et_top_search">
-						<span id="et_search_icon"></span>
+						<span id="et_search_icon">&nbsp;</span>
 						<form role="search" method="get" class="et-search-form et-hidden" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<?php
 							printf( '<input type="search" class="et-search-field" placeholder="%1$s" value="%2$s" name="s" title="%3$s" />',

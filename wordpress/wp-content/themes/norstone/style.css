@@ -939,15 +939,19 @@ body.et_fixed_nav.et_secondary_nav_two_panels #main-header{
 #top-menu ul.sub-menu .sub-menu{
     position: static;
     border: none;
-    opacity: 1;
     height: auto;
-    visibility: visible;
     padding: 0 0 0 20px;
     width: auto;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
+#top-menu li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
 #top-menu ul.sub-menu .sub-menu li{
     padding: 0;
     border: none;
