@@ -124,9 +124,10 @@
 					// Custom MT - variable defined above in the header - line 27!
 					: $stylesheet_directory_uri . '/images/logo.png';  
 			?>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
-			</a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
+					</a>
+					<a id="info-phone" href="tel:1300 293 226"><span class="icon_phone"></span>1300 293 226</a>
 
 				<div id="et-top-navigation">
 					<nav id="top-menu-nav">
@@ -181,7 +182,7 @@
 				</div> <!-- #et-top-navigation -->
 			</div> <!-- .container -->
 			<div class="product-menu-wrapper">
-				<a href="javascript:void(0);" class="product-menu-toggle">Products</a>
+				<a href="javascript:void(0);" class="product-menu-toggle"><span>Products</span></a>
 				<div class="container">
 					<?php
 						wp_nav_menu( array(

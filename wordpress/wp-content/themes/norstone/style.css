@@ -807,11 +807,40 @@ body .entry-content .select-group li{
     background: #363636;
     color: white;
     font-size: 20px;
-    height: 42px;
-    line-height: 42px;
+    line-height: 30px;
     font-weight: 300;
+    padding: 8px;
 
     position: relative;
+}
+
+.et_color_scheme_red .product-menu-toggle span{
+    display: inline-block;
+    background-color: rgba(255,255,255, 0.3);
+    padding: 0 40px 0 20px;
+    position: relative;
+
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.et_color_scheme_red .product-menu-toggle span:after{
+    content: '\33';
+
+    font-family: 'ElegantIcons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+
+    position: absolute;
+    right: 12px;
+    top: 5px;
 }
 
 .product-menu-toggle.open ~ .container .product-menu-container{
@@ -865,6 +894,12 @@ body .entry-content .select-group li{
     position: relative;
     margin-top: 50px;
     margin-bottom: 10px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .product-menu-container .menu-item a{
@@ -884,9 +919,11 @@ body .entry-content .select-group li{
     bottom: 100%;
 
     background: url('images/sprite-product.png') no-repeat center top;
-    -webkit-transition: height 0.2s;
-    -moz-transition: height 0.2s;
-    transition: height 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .product-menu-container .rock-panel a:before{
@@ -958,6 +995,10 @@ body.et_fixed_nav.et_secondary_nav_two_panels #main-header{
 }
 #top-menu ul.sub-menu .sub-menu a{
     border: none;
+}
+
+#info-phone{
+    display: none;
 }
 
 @media screen and (min-width: 981px) {
@@ -1036,12 +1077,72 @@ body.et_fixed_nav.et_secondary_nav_two_panels #main-header{
     }
 
     .product-menu-container .menu-item{
-        margin-top: 30px;
-        width: 130px;
-        margin-left: 50px;
+        margin-top: 37px;
+        width: 13%;
+        margin-left: 34px;
     }
     .product-menu-container .menu-item:first-child{
         margin-left: 0;
     }
 
+    #main-header.et-fixed-header .product-menu-container .menu-item{
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    #main-header.et-fixed-header .product-menu-container .menu-item a:before{
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform: scale(0.7);
+        bottom: 75%;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    #logo{
+        float: left;
+    }
+    #info-phone{
+        display: inline-block;
+        font-size: 26px;
+        margin: 34px 0 0 20px;
+        float: left;
+        color: #000;
+
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+    #info-phone span{
+        font-size: 20px;
+
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+
+    #main-header.et-fixed-header #info-phone{
+        font-size: 21px;
+        margin: 21px 0 0 15px;
+    }
+    #main-header.et-fixed-header #info-phone span{
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (min-width: 1320px) {
+    .product-menu-container .menu-item{
+        margin-left: 47px;
+    }
 }
