@@ -36,13 +36,11 @@
 	</li>
 <?php endif; ?>
 
-<!--
-<li class="et-social-icon et-social-instagram"><a href="https://instagram.com/norstoneglobal/‎" class="icon" target="_blank"><span><?php esc_html_e( 'Instagram', 'Divi' ); ?></span></a>
+<li class="et-social-icon et-social-instagram"><a href="https://www.instagram.com/norstoneglobal/" class="icon" target="_blank"><span><?php esc_html_e( 'Instagram', 'Divi' ); ?></span></a>
 </li>
--->
 
 <li class="et-social-icon et-social-pinterest">
-<a href="https://au.pinterest.com/source/norstone.com.au/" class="icon" target="_blank">
+<a href="https://au.pinterest.com/norstoneaus/" class="icon" target="_blank">
 	<span><?php esc_html_e( 'Pinterest', 'Divi') ; ?></span>
 </a>
 </li>

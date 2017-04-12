@@ -3,18 +3,21 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<title><?php elegant_titles(); ?></title>
-	<?php elegant_description(); ?>
-	<?php elegant_keywords(); ?>
-	<?php elegant_canonical(); ?>
+<title><?php  elegant_titles(); ?></title>
+	<?php  elegant_description();  ?>
+	<?php  elegant_keywords();  ?>
+	<?php  elegant_canonical();  ?>
 
 	<?php do_action( 'et_head_meta' ); ?>
+	
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<?php $template_directory_uri = get_template_directory_uri(); ?>
-    <!-- Custom MT -->
-    <?php $stylesheet_directory_uri = get_stylesheet_directory_uri(); ?>
+    
+	<!-- Custom MT -->
+    	<?php $stylesheet_directory_uri = get_stylesheet_directory_uri(); ?>
+
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( $template_directory_uri . '/js/html5.js"' ); ?>" type="text/javascript"></script>
 	<![endif]-->
@@ -23,16 +26,18 @@
 		document.documentElement.className = 'js';
 	</script>
 
-
-
-
 	<?php wp_head(); ?>
-    
-    
 
+<link rel='stylesheet'  href='<?php echo esc_attr( $stylesheet_directory_uri ); ?>/../Divi/style.css' type='text/css' media='all' />
+ 
+
+<!--
 <link rel='stylesheet'  href='<?php echo esc_attr( $stylesheet_directory_uri ); ?>/style.css' type='text/css' media='all' />
-<link rel='stylesheet'  href='<?php echo esc_attr( $stylesheet_directory_uri ); ?>/noricons.css' type='text/css' media='all' />
+    
+<link rel='stylesheet'  href='<?php echo esc_attr( $stylesheet_directory_uri ); ?>/../Divi/style.css' type='text/css' media='all' />
 
+<link rel='stylesheet'  href='<?php echo esc_attr( $stylesheet_directory_uri ); ?>/noricons.css' type='text/css' media='all' />
+-->
 </head>
 <body <?php body_class(); ?>>
 	<div id="page-container">
@@ -122,12 +127,12 @@
 				$logo = ( $user_logo = et_get_option( 'divi_logo' ) ) && '' != $user_logo
 					? $user_logo
 					// Custom MT - variable defined above in the header - line 27!
-					: $stylesheet_directory_uri . '/images/logo.png';  
+					: $stylesheet_directory_uri . '/images/logo-166x46.png';  
 			?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
 					</a>
-					<a id="info-phone" href="tel:1300 293 226"><span class="icon_phone"></span>1300 293 226</a>
+					<a id="info-phone" href="tel:1300293226"><span class="icon_phone"></span>1300 293 226</a>
 
 				<div id="et-top-navigation">
 					<nav id="top-menu-nav">

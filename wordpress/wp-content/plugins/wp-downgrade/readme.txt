@@ -3,7 +3,7 @@ Contributors: Reisetiger
 Donate link: http://www.reisetiger.net
 Tags: Downgrade, Core, WP-Core, Version, Rollback, Upgrade, Update, Release, Versionskontrolle
 Requires at least: 3.0.1
-Tested up to: 4.5
+Tested up to: 4.7.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,16 @@ Automatically downgrad or update to any WordPress version you want directly from
 == Description ==
 
 = WordPress Core Downgrade/Update =
-**EN:** The plugin "WP Downgrade" forces the WordPress update routine to perform the installation of a **specified** WordPress release. The Core Release you specify is then downloaded from wordpress.org and installed as would **any regular update**. 
+**EN:** The plugin "WP Downgrade" forces the WordPress update routine to perform the installation of a **specified** WordPress release. The Core Release you specify is then downloaded from wordpress.org and installed as would **any regular update**. You can permanently stay on a previous version of your choice or update selected. 
+
+The user Gahapati describes it so much better than I can. (Thank you!)
+> *WP Downgrade | Specific Core Version* has the potential for becoming one of the best-loved plugins among those, who simply cannot update to the *latest* WP release.  
+
+> In the past the latest WP release was the only offering for WP's Automatic Update routine. This left all those behind, who have to wait with Core updates, until their plugins become compatible with newer WP releases. When this finally happens, more often than not there has already been *yet another* Core update. In the end a dreaded, cumbersome, time-consuming and error-prone Manual Update used to be the only way to go.  
+
+> With *WP Downgrade | Specific Core Version* this is now a thing of the past. Anyone who lags behind the latest WP release is now able to use Automatic Updates even to lower WP versions. What WP Downgrade does simply is to make WP believe that the version you want to update to *actually is* the latest version. Because of this, there is no difference to updating to the latest version.  
+
+> For security reasons I think this is a must-have plugin for anyone running a "seasoned" WP installation, and it actually should be a Core feature to be able to update not to the *latest* WP release exclusively but instead to have a choice among *secure* releases.
 
 **DE:** Das Plugin "WP Downgrade" zwingt die WordPress-interne Update-Funktion, ein **bestimmtes** WordPress-Release zu installieren. Das definierte Core-Release wird **wie ein regul&auml;res Update** von wordpress.org bezogen und direkt installiert. 
 Das klappt wie gewohnt per Update-Button im Admin-Bereich oder per Auto-Update. Die Versionsnummer kann sowohl **höher** als auch **niedriger** sein als die aktuell installierte Version. Somit ist also auch ein Rollback auf frühere Releases möglich. Dein WordPress wird solange auf dieser Version bleiben, bis du eine neue Versionsnummer in WP-Downgrade hinterlegst (oder bis du die Versionsnummer leerst oder das Plugin deaktivierst).
@@ -54,6 +63,14 @@ A: Weil es bisher keine Fragen gab! :-)
 
 
 == Changelog ==
+= 1.1.4 =
+* Improved access to the settings page (link from plugin overview)
+* compatibility with WordPress 4.7.1
+
+= 1.1.3 =
+* bugfix on downloading certain languages
+* compatibility with WordPress 4.7
+ 
 = 1.1.2 =
 * cleaned up code
 * small design change

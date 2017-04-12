@@ -3,7 +3,7 @@
 Plugin Name: WP Downgrade | Specific Core Version
 Plugin URI: https://www.reisetiger.net
 Description: WP Downgrade allows you to either downgrade or update WordPress Core to an arbitrary version of your choice. The version you choose is downloaded directly from wordpress.org and installed just like any regular update. The target version WordPress allows you to update to remains constant until you enter a different one or deactivate the plugin either completely or by leaving the target version field empty.
-Version: 1.1.2
+Version: 1.1.4
 Author: Reisetiger
 Author URI: https://www.reisetiger.net
 License: GPL2
@@ -37,6 +37,12 @@ function register_wp_downgrade_settings() {
 	//register our settings
 	register_setting( 'wpdg-settings-group', 'wpdg_specific_version_name' );
 	// register_setting( 'wpdg-settings-group', 'some_other_option' );
+}
+
+add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'wp_downgrade_action_links' );
+function wp_downgrade_action_links( $links ) {
+   $links[] = '<a href="'. esc_url( get_admin_url(null, 'options-general.php?page=wp_downgrade') ) .'">Settings</a>';
+   return $links;
 }
 
 function wp_downgrade_settings_page() {
@@ -102,7 +108,7 @@ add_filter('site_transient_update_core','wpdg_specific_version' );
 function wpdg_specific_version($updates){
 
 $sprache = get_locale().'/';
-if ($sprache == 'en_US/'){
+if ($sprache == 'en_US/' OR $sprache == 'en'){
   $sprache = '';
   };
 $dg_version = get_option('wpdg_specific_version_name');
