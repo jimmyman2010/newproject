@@ -1,0 +1,114 @@
+0000.001 (0) Opened log file at time: Thu, 13 Apr 2017 02:51:16 +0000 on http://newproject.dev
+0000.010 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.23 WP: 4.3 PHP: 5.5.35 (apache2handler, Windows NT VNHCOOMINHMAN 6.1 build 7601 (Windows 7 Professional Edition Service Pack 1) i586) MySQL: 5.5.5 WPLANG: en_US Server: Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.5.35 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 1.8M | 2M) multisite: N openssl: OpenSSL 1.0.1s  1 Mar 2016 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.011 (0) Free space on disk containing Updraft's temporary directory: 195502.6 MB
+0000.014 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.015 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.041 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1491980024, seconds_ago=71852)
+0000.086 (0) Set semaphore last lock (fd) time to 2017-04-13 02:51:16
+0000.087 (0) Semaphore lock (fd) complete
+0000.090 (0) Backup run: resumption=0, nonce=20592c8255ea, begun at=1492051876 (0s ago), job type=backup
+0000.091 (0) Scheduling a resumption (1) after 300 seconds (1492052176) in case this run gets aborted
+0000.113 (0) Checking if we have a zip executable available
+0000.114 (0) Creation of backups of directories: beginning
+0000.116 (0) No backup of plugins: excluded by user's options
+0000.117 (0) No backup of themes: excluded by user's options
+0000.117 (0) No backup of uploads: excluded by user's options
+0000.118 (0) No backup of others: excluded by user's options
+0000.119 (0) Saving backup status to database (elements: 0)
+0000.121 (0) Beginning creation of database dump (WordPress DB)
+0000.242 (0) Table np_options: Total expected rows (approximate): 296
+0000.265 (0) Table np_options: Total rows added: 292 in 0.02 seconds
+0000.286 (0) Table np_options: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_options.table.gz - 14.2 KB)
+0000.292 (0) Table np_users: Total expected rows (approximate): 1
+0000.295 (0) Table np_users: Total rows added: 1 in 0.00 seconds
+0000.296 (0) Table np_users: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_users.table.gz - 0.6 KB)
+0000.300 (0) Table np_usermeta: Total expected rows (approximate): 26
+0000.303 (0) Table np_usermeta: Total rows added: 26 in 0.00 seconds
+0000.304 (0) Table np_usermeta: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_usermeta.table.gz - 1.3 KB)
+0000.322 (0) Table np_commentmeta: Total expected rows (approximate): 0
+0000.325 (0) Table np_commentmeta: Total rows added: 0 in 0.00 seconds
+0000.326 (0) Table np_commentmeta: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_commentmeta.table.gz - 0.4 KB)
+0000.329 (0) Table np_comments: Total expected rows (approximate): 0
+0000.332 (0) Table np_comments: Total rows added: 0 in 0.00 seconds
+0000.333 (0) Table np_comments: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_comments.table.gz - 0.5 KB)
+0000.338 (0) Table np_links: Total expected rows (approximate): 0
+0000.341 (0) Table np_links: Total rows added: 0 in 0.00 seconds
+0000.342 (0) Table np_links: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_links.table.gz - 0.4 KB)
+0000.345 (0) Table np_postmeta: Total expected rows (approximate): 3785
+0000.444 (0) Table np_postmeta: Total rows added: 3785 in 0.10 seconds
+0000.446 (0) Table np_postmeta: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_postmeta.table.gz - 76.8 KB)
+0000.449 (0) Table np_posts: Total expected rows (approximate): 2293
+0001.355 (0) Table np_posts: Total rows added: 2293 in 0.91 seconds
+0001.365 (0) Table np_posts: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_posts.table.gz - 815.5 KB)
+0001.365 (0) Table np_term_relationships: Total expected rows (approximate): 219
+0001.365 (0) Table np_term_relationships: Total rows added: 219 in 0.00 seconds
+0001.365 (0) Table np_term_relationships: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_term_relationships.table.gz - 0.9 KB)
+0001.375 (0) Table np_term_taxonomy: Total expected rows (approximate): 14
+0001.375 (0) Table np_term_taxonomy: Total rows added: 14 in 0.00 seconds
+0001.375 (0) Table np_term_taxonomy: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_term_taxonomy.table.gz - 0.6 KB)
+0001.375 (0) Table np_terms: Total expected rows (approximate): 14
+0001.376 (0) Table np_terms: Total rows added: 14 in 0.00 seconds
+0001.376 (0) Table np_terms: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_terms.table.gz - 0.6 KB)
+0001.376 (0) Table np_redirection_404: Total expected rows (approximate): 5
+0001.380 (0) Table np_redirection_404: Total rows added: 5 in 0.00 seconds
+0001.381 (0) Table np_redirection_404: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_redirection_404.table.gz - 0.7 KB)
+0001.384 (0) Table np_redirection_groups: Total expected rows (approximate): 2
+0001.396 (0) Table np_redirection_groups: Total rows added: 2 in 0.01 seconds
+0001.396 (0) Table np_redirection_groups: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_redirection_groups.table.gz - 0.4 KB)
+0001.396 (0) Table np_redirection_items: Total expected rows (approximate): 21
+0001.398 (0) Table np_redirection_items: Total rows added: 21 in 0.00 seconds
+0001.399 (0) Table np_redirection_items: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_redirection_items.table.gz - 1.3 KB)
+0001.402 (0) Table np_redirection_logs: Total expected rows (approximate): 0
+0001.404 (0) Table np_redirection_logs: Total rows added: 0 in 0.00 seconds
+0001.405 (0) Table np_redirection_logs: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_redirection_logs.table.gz - 0.4 KB)
+0001.420 (0) Table np_termmeta: Total expected rows (approximate): 0
+0001.423 (0) Table np_termmeta: Total rows added: 0 in 0.00 seconds
+0001.424 (0) Table np_termmeta: finishing file (backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_termmeta.table.gz - 0.4 KB)
+0001.426 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_options.table.gz (1/16): adding to final database dump
+0001.431 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_users.table.gz (2/16): adding to final database dump
+0001.432 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_usermeta.table.gz (3/16): adding to final database dump
+0001.433 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_commentmeta.table.gz (4/16): adding to final database dump
+0001.434 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_comments.table.gz (5/16): adding to final database dump
+0001.434 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_links.table.gz (6/16): adding to final database dump
+0001.435 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_postmeta.table.gz (7/16): adding to final database dump
+0001.481 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_posts.table.gz (8/16): adding to final database dump
+0001.869 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_term_relationships.table.gz (9/16): adding to final database dump
+0001.872 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_term_taxonomy.table.gz (10/16): adding to final database dump
+0001.873 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_terms.table.gz (11/16): adding to final database dump
+0001.875 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_redirection_404.table.gz (12/16): adding to final database dump
+0001.876 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_redirection_groups.table.gz (13/16): adding to final database dump
+0001.877 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_redirection_items.table.gz (14/16): adding to final database dump
+0001.879 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_redirection_logs.table.gz (15/16): adding to final database dump
+0001.881 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db-table-np_termmeta.table.gz (16/16): adding to final database dump
+0001.883 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db.gz: finished writing out complete database file (888 KB)
+0001.892 (0) Total database tables backed up: 16 (backup_2017-04-13-1251_Norstone_20592c8255ea-db.gz, size: 933870, checksum (SHA1): 93cf22bf7d5c99c192f3a7231b7ed99c57ee1db3)
+0001.897 (0) backup_2017-04-13-1251_Norstone_20592c8255ea-db.gz: db: This file has not yet been successfully uploaded: will queue
+0001.898 (0) Saving backup history. Total backup size: 912 KB
+0001.902 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0001.906 (0) Cloud backup selection (1/1):  (last)
+0001.908 (0) No remote despatch: user chose no remote backup service
+0001.910 (0) Recording as successfully uploaded: backup_2017-04-13-1251_Norstone_20592c8255ea-db.gz (6fcc0cda0d52641e2a55be18fed5c613)
+0001.914 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+0001.915 (0) Number of backup sets in history: 3; groups (db): 1
+0001.916 (0) Examining (for databases) backup set with group_id=0, nonce=20592c8255ea, datestamp=1492051876 (Apr 13 2017 02:51:16)
+0001.916 (0) This backup set is the backup set just made, so will not be deleted.
+0001.917 (0) Examining (for databases) backup set with group_id=0, nonce=f4f757242206, datestamp=1491980024 (Apr 12 2017 06:53:44)
+0001.918 (0) 1491980024: db: this set includes a database (backup_2017-04-12-1653_Norstone_f4f757242206-db.gz); db count is now 1
+0001.919 (0) 1491980024: db: over retain limit (1); will delete this database
+0001.919 (0) Delete file: backup_2017-04-12-1653_Norstone_f4f757242206-db.gz, service=none
+0001.936 (0) Deleting local copy (backup_2017-04-12-1653_Norstone_f4f757242206-db.gz)
+0001.961 (0) This backup set is now empty; will remove from history
+0001.963 (0) Deleting log file (log.f4f757242206.txt)
+0001.965 (0) Examining (for databases) backup set with group_id=0, nonce=62fae23ceb29, datestamp=1477549260 (Oct 27 2016 06:21:00)
+0001.966 (0) Number of backup sets in history: 2; groups (files): 1
+0001.967 (0) Examining (for files) backup set with nonce=20592c8255ea, datestamp=1492051876 (Apr 13 2017 02:51:16)
+0001.968 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.969 (0) Examining (for files) backup set with nonce=62fae23ceb29, datestamp=1477549260 (Oct 27 2016 06:21:00)
+0001.969 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0001.971 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0001.975 (0) Resume backup (20592c8255ea, 0): finish run
+0001.993 (0) Decremented the semaphore (fd) by 1
+0001.995 (0) Semaphore (fd) unlocked
+0001.996 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0001.999 (0) No email will/can be sent - the user has not configured an email address.
+0001.999 (0) The backup apparently succeeded and is now complete
