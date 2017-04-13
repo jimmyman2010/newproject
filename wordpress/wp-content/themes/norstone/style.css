@@ -1,3 +1,11 @@
+/*
+Theme Name: Norstone
+Version: 3.0.35
+Author: Artex Media
+Author URI: http://artex.media
+Template: Divi
+Tags: norstone, artex, media
+*/
 @font-face {  font-family: "noricons";  src: url("fonts/noricons.eot");  src: url("fonts/noricons.eot?#iefix") format("embedded-opentype"), url("fonts/noricons.woff") format("woff"), url("fonts/noricons.ttf") format("truetype"), url("fonts/noricons.svg#noricons") format("svg");  font-weight: normal;  font-style: normal;  }
 @font-face {  font-family: "ETmodules";  src: url("../Divi/core/admin/fonts/modules.eot");  src: url("../Divi/core/admin/fonts/modules.eot?#iefix") format("embedded-opentype"), url("../Divi/core/admin/fonts/modules.ttf") format("truetype"), url("../Divi/core/admin/fonts/modules.woff") format("woff"), url("../Divi/core/admin/fonts/modules.svg#ETmodules") format("svg");  font-weight: normal;  font-style: normal;  }
 .et_subscribe_loader {  background-image: url("../Divi/includes/builder/styles/images/subscribe-loader.gif");  }
