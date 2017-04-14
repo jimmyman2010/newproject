@@ -1042,6 +1042,7 @@ body.et_fixed_nav.et_secondary_nav_two_panels #main-header {
 
 body a.button-top{
     display: none;
+    background-color: #00897b;
     margin: 25px 0 0 25px;
     -webkit-transition: margin 0.4s;
     -moz-transition: margin 0.4s;
@@ -1060,5 +1061,10 @@ body.et_fixed_nav.et_boxed_layout #page-container{
 @media screen and (min-width: 486px) {
     body a.button-top{
         display: inline-block;
+    }
+}
+@media screen and (min-width: 768px) {
+    body a.button-top:hover{
+        opacity: 0.8;
     }
 }
