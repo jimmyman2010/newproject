@@ -1049,6 +1049,7 @@ body a.button-top{
     -ms-transition: margin 0.4s;
     -o-transition: margin 0.4s;
     transition: margin 0.4s;
+    text-shadow: none;
 }
 
 body .et-fixed-header a.button-top{
