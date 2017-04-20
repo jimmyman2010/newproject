@@ -1069,3 +1069,9 @@ body.et_fixed_nav.et_boxed_layout #page-container{
         opacity: 0.8;
     }
 }
+
+.grid{ font-size: 16px; }
+.grid td{ width: 50%; padding: 10px; }
+.grid td p{ padding: 0; }
+.grid td p a{ display: inline-block; line-height: 0; }
+.grid img{ max-width: 100%; height: auto; }
