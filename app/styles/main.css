@@ -1070,8 +1070,10 @@ body.et_fixed_nav.et_boxed_layout #page-container{
     }
 }
 
-.grid{ font-size: 16px; }
-.grid td{ width: 50%; padding: 10px; }
-.grid td p{ padding: 0; }
-.grid td p a{ display: inline-block; line-height: 0; }
-.grid img{ max-width: 100%; height: auto; }
+body .entry-content .grid{ font-size: 15px; }
+body .entry-content .grid td{ width: 50%; padding: 0 7px 10px; border: none; }
+body .entry-content .grid td:first-child{ padding: 0 7px 10px 0; }
+body .entry-content .grid td:last-child{ padding: 0 0 10px 7px; }
+body .entry-content .grid td p{ padding: 0; }
+body .entry-content .grid td a{ display: inline-block; line-height: 0; }
+body .entry-content .grid img{ max-width: 100%; height: auto; }
