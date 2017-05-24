@@ -45,7 +45,7 @@ wp_nav_menu( array(
 <?php endif; // ! is_page_template( 'page-template-blank.php' ) ?>
 
 	</div> <!-- #page-container -->
-
+</div>
 <!-- #CLICKY START -->
 <script type="text/javascript">
 var clicky_site_ids = clicky_site_ids || [];
@@ -130,6 +130,44 @@ s.defer=true;s.src="https://salesiq.zoho.com/norstone/float.ls?embedname=norston
 t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 </script>
 <!-- #ZOHO IQ END -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.contact-slide-overlay, .contact-slide-close').on('click', function(){
+			$('body').removeClass('contact-slide-popup');
+		});
+
+		$('.open-modal-enq-form').on('click', function(e){
+			e.preventDefault();
+			$('body').addClass('contact-slide-popup');
+		});
+
+		var timer = setTimeout(function(){
+			$('.button-group').each(function(){
+				if($(this).parent().width() >= 600){
+					$(this).addClass('button-group--inline');
+				} else {
+					$(this).removeClass('button-group--inline');
+				}
+			});
+		}, 0);
+		$(window).on('resize', function(){
+			if(timer){
+				clearTimeout(timer);
+			}
+			timer = setTimeout(function(){
+				$('.button-group').each(function(){
+					if($(this).parent().width() >= 600){
+						$(this).addClass('button-group--inline');
+					} else {
+						$(this).removeClass('button-group--inline');
+					}
+				});
+			}, 300);
+		});
+
+	});
+</script>
 
 </body>
 </html>
