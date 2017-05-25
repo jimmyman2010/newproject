@@ -1079,10 +1079,13 @@ body .entry-content .grid td a{ display: inline-block; line-height: 0; }
 body .entry-content .grid img{ max-width: 100%; height: auto; }
 
 .button-group{
-    border: 1px solid #00897B;
+    border: 1px solid #9f9f9f;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 20px;
+}
+.button-group:hover{
+    border-color: #00897b;
 }
 .button-group a{
     float: left;
@@ -1097,6 +1100,7 @@ body .entry-content .grid img{ max-width: 100%; height: auto; }
     color: white;
     background-color: #00897B;
     font-weight: 400;
+    border-color: #00897b !important;
 }
 
 .button-group br{ display: none !important; }
@@ -1105,16 +1109,13 @@ body .entry-content .grid img{ max-width: 100%; height: auto; }
     width: 50%;
 }
 .button-group .learn-more{
-    border-left: 1px solid #00897B;
+    border-left: 1px solid #9f9f9f;
 }
 .button-group .get-a-quote{
-    border-top: 1px solid #00897B;
+    border-top: 1px solid #9f9f9f;
 }
 
 @media screen and (min-width: 600px) {
-    .button-group{
-        font-size: 20px;
-    }
     .button-group a{
         padding: 12px;
     }
@@ -1131,11 +1132,11 @@ body .entry-content .grid img{ max-width: 100%; height: auto; }
     }
 
     .button-group--inline .learn-more {
-        border-left: 1px solid #00897B;
+        border-left: 1px solid #9f9f9f;
     }
 
     .button-group--inline .get-a-quote{
-        border-left: 1px solid #00897B;
+        border-left: 1px solid #9f9f9f;
         border-top: none;
     }
 }
