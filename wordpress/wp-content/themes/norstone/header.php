@@ -74,7 +74,7 @@
         .contact-slide{padding-left: 30px}
         .contact-slide h3{margin-top: 0}
         .contact-slide .contact-slide-close{position: absolute; top: 50%; left: 0; margin: -35px 0 0; padding-top: 24px; width: 30px;height: 70px; background-color: #e6001c; color: white !important; font-size: 30px}
-        .contact-slide-open{position:fixed;z-index:100000;top:50%; right:0; margin-top:-35px;display:block; height: 70px; padding: 8px 3px; overflow:hidden; background-color:#e6001c; color:white;
+        .contact-slide-open{position:fixed;z-index:100000;top:50%; right:0; margin-top:-35px;display:block; height: 70px; padding: 8px 0; overflow:hidden; background-color:#e6001c; color:white;
             -webkit-transition: all 0.2s;
             -moz-transition: all 0.2s;
             -ms-transition: all 0.2s;
@@ -90,6 +90,9 @@
         }
         .contact-slide-open:hover span{width: 80px; opacity: 1}
         .contact-slide-popup .contact-slide-open{right: -200px}
+        @media screen and (min-width: 981px) {
+            .contact-slide-open{padding: 8px 3px}
+        }
     </style>
 
 	<?php wp_head(); ?>
