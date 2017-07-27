@@ -71,6 +71,25 @@
             #main-header.et-fixed-header .product-menu-container .menu-item{margin-top: 0}
             #main-header.et-fixed-header .product-menu-container .menu-item img{width: 60%}
         }
+        .contact-slide{padding-left: 30px}
+        .contact-slide h3{margin-top: 0}
+        .contact-slide .contact-slide-close{position: absolute; top: 50%; left: 0; margin: -35px 0 0; padding-top: 24px; width: 30px;height: 70px; background-color: #e6001c; color: white !important; font-size: 30px}
+        .contact-slide-open{position:fixed;z-index:100000;top:50%; right:0; margin-top:-35px;display:block; height: 70px; padding: 8px 3px; overflow:hidden; background-color:#e6001c; color:white;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;}
+        .contact-slide-open img{height:54px; width: auto; float:left}
+        .contact-slide-open span{display: block; width: 0; opacity: 0; color: white; margin-top: 7px; line-height: 1.3; font-size: 16px;overflow:hidden; white-space: nowrap;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+        .contact-slide-open:hover span{width: 80px; opacity: 1}
+        .contact-slide-popup .contact-slide-open{right: -200px}
     </style>
 
 	<?php wp_head(); ?>
@@ -89,9 +108,14 @@
 <body <?php body_class(); ?>>
 <div class="site-container">
 	<div class="contact-slide-overlay"></div>
+    <a class="contact-slide-open open-modal-enq-form" href="javascript:void(0);">
+        <img src="/wp-content/themes/norstone/images/get-a-quote-button.png" alt=""/>
+        <span>GET <br>A QUOTE</span>
+    </a>
 	<div class="contact-slide">
 		<div class="outer">
             <a class="contact-slide-close" href="javascript:void(0);">&#x4d;</a>
+            <h3>Get a quote</h3>
 			<div class="inner entry-content">
 
 				<div id="crmWebToEntityForm"><meta http-equiv="content-type" content="text/html;charset=UTF-8">
@@ -233,7 +257,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" />
 					</a>
-					<a class="button-top small-button smallblue open-modal-enq-form" href="/contact-us/">Get a quote</a>
+<!--					<a class="button-top small-button smallblue open-modal-enq-form" href="/contact-us/">Get a quote</a>-->
 
 				<div id="et-top-navigation">
 					<nav id="top-menu-nav">
@@ -362,7 +386,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
                                         <img src="/wp-content/themes/norstone/images/flagstone.png" alt=""/>
                                     </span>
                                     <span class="text">Flag Stone</span>
-                                    <span class="text-hover">Monarostone</span>
+                                    <span class="text-hover">MONAROSTONE<sup>TM</sup></span>
                                     <span class="line" style="background-color: #009d86"></span>
                                 </a>
                             </li>
