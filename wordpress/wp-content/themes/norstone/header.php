@@ -93,6 +93,24 @@
         @media screen and (min-width: 981px) {
             .contact-slide-open{padding: 8px 3px}
         }
+        .rockpanels-sl, .rockpanels-il, .rockpanels-xl, .monarostone, .planc,
+        .pavr, .lynia, .aksent3d, .ashlr, .brklyn, .rustic, .get-quote{text-shadow: none !important;}
+
+        .rockpanels-sl:hover, .rockpanels-il:hover, .rockpanels-xl:hover, .monarostone:hover, .planc:hover,
+        .pavr:hover, .lynia:hover, .aksent3d:hover, .ashlr:hover, .brklyn:hover, .rustic:hover, .get-quote:hover{opacity:0.7}
+
+        .rockpanels-sl{background-color:#42a5f5 !important;}
+        .rockpanels-il{background-color:#1e88e5 !important;}
+        .rockpanels-xl{background-color:#1565c0 !important;}
+        .monarostone{background-color:#009d86 !important;}
+        .planc{background-color:#00acc1 !important;}
+        .pavr{background-color:#ffb300 !important;}
+        .lynia{background-color:#5e35b1 !important;}
+        .aksent3d{background-color:#00897b !important;}
+        .ashlr{background-color:#43a047 !important;}
+        .brklyn{background-color:#f44336 !important;}
+        .rustic{background-color:#3949ab !important;}
+        .get-quote{background-color:#e6001c !important;}
     </style>
 
 	<?php wp_head(); ?>
