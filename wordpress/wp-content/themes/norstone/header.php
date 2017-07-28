@@ -73,8 +73,8 @@
         }
         .contact-slide{padding-left: 30px}
         .contact-slide h3{margin-top: 0}
-        .contact-slide .contact-slide-close{position: absolute; top: 50%; left: 0; margin: -35px 0 0; padding-top: 24px; width: 30px;height: 70px; background-color: #e6001c; color: white !important; font-size: 30px}
-        .contact-slide-open{position:fixed;z-index:100000;top:50%; right:0; margin-top:-35px;display:block; height: 70px; padding: 8px 0; overflow:hidden; background-color:#e6001c; color:white;
+        .contact-slide .contact-slide-close{position: absolute; top: 50%; left: 0; margin: -70px 0 0; padding-top: 24px; width: 30px;height: 70px; background-color: #e6001c; color: white !important; font-size: 30px}
+        .contact-slide-open{position:fixed;z-index:100000;top:50%; right:0; margin-top:-105px;display:block; height: 70px; padding: 8px 0; overflow:hidden; background-color:#e6001c; color:white;
             -webkit-transition: all 0.2s;
             -moz-transition: all 0.2s;
             -ms-transition: all 0.2s;
@@ -360,7 +360,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
                                 </a>
                             </li>
                             <li class="menu-item smooth-stackstone-panels">
-                                <a href="//www.norstone.com.au/stone-wall-cladding/aksent-3d">
+                                <a href="//www.norstone.com.au/stone-wall-cladding/aksent-3d-smooth-stackstone-panels/">
                                     <span class="img-wrap">
                                         <span class="hover">
                                             <img src="/wp-content/themes/norstone/images/smooth-stackstone-panels.png" alt=""/>
@@ -373,7 +373,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
                                 </a>
                             </li>
                             <li class="menu-item stone-tiles">
-                                <a href="//www.norstone.com.au/stone-wall-cladding/lynia">
+                                <a href="//www.norstone.com.au/stone-wall-cladding/lynia-stone-tiles/">
                                     <span class="img-wrap">
                                         <span class="hover">
                                             <img src="/wp-content/themes/norstone/images/stone-tiles.png" alt=""/>
@@ -386,7 +386,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
                                 </a>
                             </li>
                             <li class="menu-item ledgestone-panels">
-                                <a href="//www.norstone.com.au/stone-wall-cladding/rustik">
+                                <a href="//www.norstone.com.au/stone-wall-cladding/rustik-ledgestone-panels/">
                                     <span class="img-wrap">
                                         <span class="hover">
                                             <img src="/wp-content/themes/norstone/images/ledgestone-panels.png" alt=""/>
@@ -399,7 +399,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
                                 </a>
                             </li>
                             <li class="menu-item flagstone">
-                                <a href="//www.norstone.com.au/stone-wall-cladding/monarostone">
+                                <a href="//www.norstone.com.au/stone-wall-cladding/monarostone-flagstone/">
                                     <span class="img-wrap">
                                         <span class="hover">
                                             <img src="/wp-content/themes/norstone/images/flagstone.png" alt=""/>
@@ -425,7 +425,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
                                 </a>
                             </li>
                             <li class="menu-item brickslips">
-                                <a href="//www.norstone.com.au/stone-wall-cladding/brklyn">
+                                <a href="//www.norstone.com.au/stone-wall-cladding/brklyn-brickslips/">
                                     <span class="img-wrap">
                                         <span class="hover">
                                             <img src="/wp-content/themes/norstone/images/brickslips.png" alt=""/>
@@ -438,7 +438,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
                                 </a>
                             </li>
                             <li class="menu-item large-stone-tiles">
-                                <a href="//www.norstone.com.au/stone-wall-cladding/planc">
+                                <a href="//www.norstone.com.au/stone-wall-cladding/planc-large-stone-tiles/">
                                     <span class="img-wrap">
                                         <span class="hover">
                                             <img src="/wp-content/themes/norstone/images/large-stone-tiles.png" alt=""/>
