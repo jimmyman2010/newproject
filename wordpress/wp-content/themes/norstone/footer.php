@@ -140,31 +140,32 @@ t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 		$('.open-modal-enq-form').on('click', function(e){
 			e.preventDefault();
 			$('body').addClass('contact-slide-popup');
+			var rel = $(this).attr('rel'),
+                type = $(this).attr('type');
+			if(type === 'checkbox'){
+                $('input[value="' + rel + '"]').prop('checked', true);
+            }
+            if(type === 'select'){
+                $('select').val(rel);
+            }
 		});
 
-		var timer = setTimeout(function(){
-			$('.button-group').each(function(){
-				if($(this).parent().width() >= 600){
-					$(this).addClass('button-group--inline');
-				} else {
-					$(this).removeClass('button-group--inline');
-				}
-			});
-		}, 0);
-		$(window).on('resize', function(){
-			if(timer){
-				clearTimeout(timer);
-			}
-			timer = setTimeout(function(){
-				$('.button-group').each(function(){
-					if($(this).parent().width() >= 600){
-						$(this).addClass('button-group--inline');
-					} else {
-						$(this).removeClass('button-group--inline');
-					}
-				});
-			}, 300);
-		});
+        var timer = setTimeout(buttonGroup, 0);
+        $(window).on('resize', function(){
+            if(timer){
+                clearTimeout(timer);
+            }
+            timer = setTimeout(buttonGroup, 300);
+        });
+        function buttonGroup() {
+            $('.button-group').each(function(){
+                if($(this).parent().width() >= 600){
+                    $(this).addClass('button-group--inline');
+                } else {
+                    $(this).removeClass('button-group--inline');
+                }
+            });
+        }
 
 	});
 </script>
