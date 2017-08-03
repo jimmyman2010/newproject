@@ -530,7 +530,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 					</a>
 
 <!--					<a class="button-top small-button smallblue open-modal-enq-form" href="/contact-us/" rel="SL Rock Panels" type="checkbox">Get a quote</a>-->
-
+<!--                <a href="javascript:void(0);" class="small-button smallblue get-quote open-modal-enq-form" rel="Grey" type="select">Get a Quote</a>-->
 
 
 				<div id="et-top-navigation">
