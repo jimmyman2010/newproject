@@ -140,8 +140,8 @@ t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 		$('.open-modal-enq-form').on('click', function(e){
 			e.preventDefault();
 			$('body').addClass('contact-slide-popup');
-			var checkbox = $(this).data('checkbox'),
-                select = $(this).data('select');
+			var checkbox = $(this).data('product'),
+                select = $(this).data('colour');
 			if(checkbox){
                 $('input[value="' + checkbox + '"]').prop('checked', true);
             }

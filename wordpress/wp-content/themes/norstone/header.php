@@ -452,8 +452,9 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 
 					</a>
 
-<!--					<a class="button-top small-button open-modal-enq-form" href="/contact-us/" data-checkbox="SL Rock Panels"  data-select="Ochre">Get a quote</a>-->
-<!--                <a href="javascript:void(0);" class="small-button get-quote open-modal-enq-form" data-select="Grey">Get a Quote</a>-->
+<!--                <a href="javascript:void(0);" class="small-button get-quote open-modal-enq-form" data-product="Monarostone">Get a quote</a>-->
+<!--                <a href="javascript:void(0);" class="small-button get-quote open-modal-enq-form" data-colour="Grey">Get a Quote</a>-->
+<!--                <a href="javascript:void(0);" class="small-button get-quote open-modal-enq-form" data-product="SL Rock Panels" data-colour="Ochre">Get a quote</a>-->
 
 
 				<div id="et-top-navigation">
