@@ -140,13 +140,13 @@ t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
 		$('.open-modal-enq-form').on('click', function(e){
 			e.preventDefault();
 			$('body').addClass('contact-slide-popup');
-			var rel = $(this).attr('rel'),
-                type = $(this).attr('type');
-			if(type === 'checkbox'){
-                $('input[value="' + rel + '"]').prop('checked', true);
+			var checkbox = $(this).data('checkbox'),
+                select = $(this).data('select');
+			if(checkbox){
+                $('input[value="' + checkbox + '"]').prop('checked', true);
             }
-            if(type === 'select'){
-                $('select').val(rel);
+            if(select){
+                $('select').val(select);
             }
 		});
 

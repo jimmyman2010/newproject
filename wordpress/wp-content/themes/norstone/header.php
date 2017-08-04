@@ -125,7 +125,7 @@
             .contact-slide-open:hover span{width: 80px; opacity: 1}
         }
         .rockpanels-sl, .rockpanels-il, .rockpanels-xl, .monarostone, .planc,
-        .pavr, .lynia, .aksent3d, .ashlr, .brklyn, .rustic, .get-quote{text-shadow: none !important;}
+        .pavr, .lynia, .aksent3d, .ashlr, .brklyn, .rustic, .get-quote{text-shadow: none !important; border: none; color: #fff!important;}
         .rockpanels-sl:hover, .rockpanels-il:hover, .rockpanels-xl:hover, .monarostone:hover, .planc:hover,
         .pavr:hover, .lynia:hover, .aksent3d:hover, .ashlr:hover, .brklyn:hover, .rustic:hover, .get-quote:hover{opacity:0.7}
         .rockpanels-sl{background-color:#42a5f5 !important;}
@@ -452,8 +452,8 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 
 					</a>
 
-<!--					<a class="button-top small-button smallblue open-modal-enq-form" href="/contact-us/" rel="SL Rock Panels" type="checkbox">Get a quote</a>-->
-<!--                <a href="javascript:void(0);" class="small-button smallblue get-quote open-modal-enq-form" rel="Grey" type="select">Get a Quote</a>-->
+<!--					<a class="button-top small-button open-modal-enq-form" href="/contact-us/" data-checkbox="SL Rock Panels"  data-select="Ochre">Get a quote</a>-->
+<!--                <a href="javascript:void(0);" class="small-button get-quote open-modal-enq-form" data-select="Grey">Get a Quote</a>-->
 
 
 				<div id="et-top-navigation">
