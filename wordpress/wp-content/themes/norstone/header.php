@@ -61,162 +61,85 @@
 		body .entry-content .grid{font-size:16px;color:#1a1a1a}body .entry-content .grid td{width:50%;padding:0 7px 15px;border:none}body .entry-content .grid td:first-child{padding:0 7px 15px 0}body .entry-content .grid td:last-child{padding:0 0 15px 7px}body .entry-content .grid td p{padding:0}body .entry-content .grid td a{display:inline-block;line-height:0}body .entry-content .grid img{max-width:100%;height:auto}.button-group{border:1px solid #9f9f9f;font-size:18px;font-weight:300;margin-bottom:20px}.button-group:hover{border-color:#00897b}.button-group a{float:left;color:#1a1a1a;width:100%;text-align:center;padding:10px}.button-group a:hover{text-decoration:none;color:#fff;background-color:#00897b;font-weight:400;border-color:#00897b!important}.button-group br{display:none!important}.button-group .learn-more,.button-group .pdf-flyer{width:50%}.button-group .learn-more{border-left:1px solid #9f9f9f}.button-group .get-a-quote{border-top:1px solid #9f9f9f}@media screen and (min-width:600px){.button-group a{padding:12px}.button-group--inline{max-width:600px;margin-left:auto;margin-right:auto}.button-group--inline .get-a-quote,.button-group--inline .learn-more,.button-group--inline .pdf-flyer{width:33.33%}.button-group--inline .learn-more{border-left:1px solid #9f9f9f}.button-group--inline .get-a-quote{border-left:1px solid #9f9f9f;border-top:none}}.site-container{max-width:100vw;overflow-x:hidden}.contact-slide-popup{overflow:hidden;padding-right:16px}.contact-slide{background-color:#ececec;position:fixed;top:0;right:-100%;height:100%;width:100%;max-width:800px;padding:20px;z-index:100001;overflow-y:scroll;transition:right 1s}.contact-slide-popup .contact-slide{right:0;box-shadow:-5px 0 30px rgba(0,0,0,.3)}.contact-slide-overlay{position:fixed;top:0;left:0;height:100%;width:100%;z-index:100000;display:none}.contact-slide-popup .contact-slide-overlay{display:block}.contact-slide-close{font-family:ETmodules;font-size:40px;display:inline-block;margin-left:-10px;color:#212121!important}.contact-slide .inner{background-color:#fff;padding:20px}
         html { -webkit-text-size-adjust: 100%; }
         .product-menu-wrapper .container{}
-
         .product-menu-container .menu-item a:before{display: none}
-
         .product-menu-container .menu-item .img-wrap{display: block; position: relative}
-
         .product-menu-container .menu-item .img-wrap .hover{position: absolute; top:0; left:0; width:100%; opacity: 0;
-
             -webkit-transition: all 0.2s;
-
             -moz-transition: all 0.2s;
-
             -ms-transition: all 0.2s;
-
             -o-transition: all 0.2s;
-
             transition: all 0.2s;
-
         }
-
         .product-menu-container .menu-item{margin-top: 0}
-
         .product-menu-container .menu-item .text-hover{display: none}
-
         .product-menu-container .menu-item sup{font-size: 50%}
-
         .product-menu-container .menu-item img{width: 80%;
-
             -webkit-transition: all 0.2s;
-
             -moz-transition: all 0.2s;
-
             -ms-transition: all 0.2s;
-
             -o-transition: all 0.2s;
-
             transition: all 0.2s;
-
         }
-
         @media screen and (min-width: 768px) {
-
             .product-menu-container .menu-item{width: 22%;}
-
         }
-
         @media screen and (min-width: 981px) {
-
             .product-menu-container .menu-item a .line{content: ''; margin-top: 3px; display: block; height: 4px; width: 0; margin-left: 50%;
-
                 -webkit-transition: all 0.2s;
-
                 -moz-transition: all 0.2s;
-
                 -ms-transition: all 0.2s;
-
                 -o-transition: all 0.2s;
-
                 transition: all 0.2s;
-
             }
-
             .product-menu-container .menu-item{width: 12%; margin-left: 0.1%}
-
             .product-menu-container .menu-item:first-child{margin-left: 0}
-
-
-
             .product-menu-container .menu-item a:hover .text{display: none}
-
             .product-menu-container .menu-item a:hover .text-hover{display: inline}
-
             .product-menu-container .menu-item a:hover .line{width: 84%; margin-left: 8%}
-
             .product-menu-container .menu-item a:hover .img-wrap .hover{opacity: 0.8}
-
-
-
             #main-header.et-fixed-header .product-menu-container .menu-item{margin-top: 0}
-
             #main-header.et-fixed-header .product-menu-container .menu-item img{width: 60%}
-
         }
-
         .contact-slide{padding-left: 30px;-webkit-overflow-scrolling: touch}
         .safari .contact-slide select, .safari .contact-slide input{-webkit-appearance: none; -moz-appearance: none; appearance: none;}
         .contact-slide h3{margin-top: 0}
-
         .contact-slide-close{position: absolute; top: 10px; right: 10px; padding-top: 10px; width: 40px;height: 40px}
-
         .contact-slide-open{position:fixed;z-index:100000;top:50%; right:0; margin-top:-105px;display:block; height: 70px; padding: 8px 0; overflow:hidden; background-color:#e6001c; color:white;
-
             -webkit-transition: all 0.2s;
-
             -moz-transition: all 0.2s;
-
             -ms-transition: all 0.2s;
-
             -o-transition: all 0.2s;
-
             transition: all 0.2s;}
-
         .contact-slide-open img{height:54px; width: auto; float:left}
-
         .contact-slide-open span{display: block; width: 0; opacity: 0; color: white; margin-top: 7px; line-height: 1.3; font-size: 16px;overflow:hidden; white-space: nowrap;
             -webkit-transition: all 0.2s;
             -moz-transition: all 0.2s;
             -ms-transition: all 0.2s;
             -o-transition: all 0.2s;
             transition: all 0.2s;
-
         }
         .contact-slide-popup .contact-slide-open{right: -200px}
         .contact-slide-close--middle{position: absolute;top:50%; left:0;z-index:100002;background-color:red; width: 30px; height: 70px; font-size:32px; padding-top: 22px; text-align: center; margin: -70px 0 0; color: white!important }
         @media screen and (min-width: 981px) {
-
             .contact-slide-open{padding: 8px 3px}
             .contact-slide-open:hover span{width: 80px; opacity: 1}
-
         }
-
         .rockpanels-sl, .rockpanels-il, .rockpanels-xl, .monarostone, .planc,
-
         .pavr, .lynia, .aksent3d, .ashlr, .brklyn, .rustic, .get-quote{text-shadow: none !important;}
-
-
-
         .rockpanels-sl:hover, .rockpanels-il:hover, .rockpanels-xl:hover, .monarostone:hover, .planc:hover,
-
         .pavr:hover, .lynia:hover, .aksent3d:hover, .ashlr:hover, .brklyn:hover, .rustic:hover, .get-quote:hover{opacity:0.7}
-
-
-
         .rockpanels-sl{background-color:#42a5f5 !important;}
-
         .rockpanels-il{background-color:#1e88e5 !important;}
-
         .rockpanels-xl{background-color:#1565c0 !important;}
-
         .monarostone{background-color:#009d86 !important;}
-
         .planc{background-color:#00acc1 !important;}
-
         .pavr{background-color:#ffb300 !important;}
-
         .lynia{background-color:#5e35b1 !important;}
-
         .aksent3d{background-color:#00897b !important;}
-
         .ashlr{background-color:#43a047 !important;}
-
         .brklyn{background-color:#f44336 !important;}
-
         .rustic{background-color:#3949ab !important;}
-
         .get-quote{background-color:#e6001c !important;}
-
     </style>
 
 
