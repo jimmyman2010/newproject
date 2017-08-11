@@ -141,9 +141,11 @@
         .brklyn{background-color:#f44336 !important;}
         .rustic{background-color:#3949ab !important;}
         .get-quote{background-color:#e6001c !important;}
-        .large-button{float: right; margin: 21px 0 0; border-radius: 0; line-height: 16px; padding: 12px 4px; font-size: 15px; cursor: pointer; text-align: center}
+        .large-button{float: right; margin: 21px 0 0; border-radius: 0; line-height: 16px; padding: 12px 4px; font-size: 15px; cursor: pointer; text-align: center; border-radius: 2px}
         .large-button ~ .shopify-buy-frame{display: inline-block !important}
         .large-button ~ .shopify-buy-frame iframe{width: 180px !important}
+        .on-dark-background, .on-white-background{background-color: white !important; color: #e6001c !important; display: block; margin-left: auto !important; margin-right: auto !important; float: none; max-width: 178px !important;}
+        .on-white-background{border: 1px solid #e6001c}
         @media screen and (min-width: 375px) {
             .large-button{padding: 12px 20px}
         }
