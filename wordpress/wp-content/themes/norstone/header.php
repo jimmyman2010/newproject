@@ -34,6 +34,18 @@
 
 	<!-- Custom MT -->
 
+<!-- Hotjar Tracking Code for www.norstone.com.au -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:660097,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
     	<?php $stylesheet_directory_uri = get_stylesheet_directory_uri(); ?>
 
 
@@ -262,6 +274,12 @@
 <option value="Pearl">Pearl</option>
 <option value="Ivory">Ivory</option>
 <option value="White">White</option>
+<option value="Beige">Beige</option>
+<option value="Lavastone">Lavastone</option>
+<option value="Travertine">Travertine</option>
+<option value="Silver Grey">Silver Grey</option>
+<option value="Seashell">Seashell</option>
+<option value="Tuscany">Tuscany</option>
 
 						</select>
 
@@ -606,31 +624,31 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 
                         <ul id="product-menu" class="menu">
 
-                            <li class="menu-item stacked-stone-veneer-panels">
+							<li class="menu-item large-stone-tiles">
 
-                                <a href="//www.norstone.com.au/stone-wall-cladding/stacked-stone-veneer-panels/">
+								<a href="//www.norstone.com.au/stone-wall-cladding/planc-large-stone-tiles/">
 
                                     <span class="img-wrap">
 
                                         <span class="hover">
 
-                                            <img src="/wp-content/themes/norstone/images/stacked-stone-veneer-panels.png" alt=""/>
+                                            <img src="/wp-content/themes/norstone/images/large-stone-tiles.png" alt=""/>
 
                                         </span>
 
-                                        <img src="/wp-content/themes/norstone/images/stacked-stone-veneer-panels.png" alt=""/>
+                                        <img src="/wp-content/themes/norstone/images/large-stone-tiles.png" alt=""/>
 
                                     </span>
 
-                                    <span class="text">Stacked Stone</span>
+									<span class="text">Stone planks</span>
 
-                                    <span class="text-hover">ROCK PANELS<sup>TM</sup></span>
+									<span class="text-hover">PLANC<sup>TM</sup></span>
 
-                                    <span class="line" style="background-color: #1e88e5"></span>
+									<span class="line" style="background-color: #00acc1"></span>
 
-                                </a>
+								</a>
 
-                            </li>
+							</li>
 
                             <li class="menu-item smooth-stackstone-panels">
 
@@ -684,32 +702,6 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 
                             </li>
 
-                            <li class="menu-item ledgestone-panels">
-
-                                <a href="//www.norstone.com.au/stone-wall-cladding/rustik-ledgestone-panels/">
-
-                                    <span class="img-wrap">
-
-                                        <span class="hover">
-
-                                            <img src="/wp-content/themes/norstone/images/ledgestone-panels.png" alt=""/>
-
-                                        </span>
-
-                                        <img src="/wp-content/themes/norstone/images/ledgestone-panels.png" alt=""/>
-
-                                    </span>
-
-                                    <span class="text">Ledgestone</span>
-
-                                    <span class="text-hover">RUSTIK<sup>TM</sup></span>
-
-                                    <span class="line" style="background-color: #3949ab"></span>
-
-                                </a>
-
-                            </li>
-
                             <li class="menu-item flagstone">
 
                                 <a href="//www.norstone.com.au/stone-wall-cladding/monarostone-flagstone/">
@@ -736,7 +728,7 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 
                             </li>
 
-                            <li class="menu-item random-ashlar-ashlr">
+                            <!--li class="menu-item random-ashlar-ashlr">
 
                                 <a href="//www.norstone.com.au/stone-wall-cladding/ashlr-random-ashlar/">
 
@@ -760,9 +752,61 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 
                                 </a>
 
-                            </li>
+                            </li-->
 
-                            <li class="menu-item brickslips">
+							<!--li class="menu-item ledgestone-panels">
+
+								<a href="//www.norstone.com.au/stone-wall-cladding/rustik-ledgestone-panels/">
+
+                                    <span class="img-wrap">
+
+                                        <span class="hover">
+
+                                            <img src="/wp-content/themes/norstone/images/ledgestone-panels.png" alt=""/>
+
+                                        </span>
+
+                                        <img src="/wp-content/themes/norstone/images/ledgestone-panels.png" alt=""/>
+
+                                    </span>
+
+									<span class="text">Ledgestone</span>
+
+									<span class="text-hover">RUSTIK<sup>TM</sup></span>
+
+									<span class="line" style="background-color: #3949ab"></span>
+
+								</a>
+
+							</li-->
+
+							<li class="menu-item stacked-stone-veneer-panels">
+
+								<a href="//www.norstone.com.au/stone-wall-cladding/stacked-stone-veneer-panels/">
+
+                                    <span class="img-wrap">
+
+                                        <span class="hover">
+
+                                            <img src="/wp-content/themes/norstone/images/stacked-stone-veneer-panels.png" alt=""/>
+
+                                        </span>
+
+                                        <img src="/wp-content/themes/norstone/images/stacked-stone-veneer-panels.png" alt=""/>
+
+                                    </span>
+
+									<span class="text">Stacked Stone</span>
+
+									<span class="text-hover">ROCK PANELS<sup>TM</sup></span>
+
+									<span class="line" style="background-color: #1e88e5"></span>
+
+								</a>
+
+							</li>
+
+                            <!--li class="menu-item brickslips">
 
                                 <a href="//www.norstone.com.au/stone-wall-cladding/brklyn-brickslips/">
 
@@ -786,33 +830,17 @@ var $zoho= $zoho || {salesiq:{values:{},ready:function(){$zoho.salesiq.floatbutt
 
                                 </a>
 
-                            </li>
-
-                            <li class="menu-item large-stone-tiles">
-
-                                <a href="//www.norstone.com.au/stone-wall-cladding/planc-large-stone-tiles/">
-
-                                    <span class="img-wrap">
-
-                                        <span class="hover">
-
-                                            <img src="/wp-content/themes/norstone/images/large-stone-tiles.png" alt=""/>
-
-                                        </span>
-
-                                        <img src="/wp-content/themes/norstone/images/large-stone-tiles.png" alt=""/>
-
-                                    </span>
-
-                                    <span class="text">Stone planks</span>
-
-                                    <span class="text-hover">PLANC<sup>TM</sup></span>
-
-                                    <span class="line" style="background-color: #00acc1"></span>
-
-                                </a>
-
-                            </li>
+                            </li-->
+							<style type="text/css">
+							@media screen and (min-width: 981px){
+								.product-menu-container .menu-item {
+									margin-left: 7%;
+								}
+								.product-menu-container .menu-item:first-child {
+									margin-left: 0;
+								}
+							}
+							</style>
 
                         </ul>
 
